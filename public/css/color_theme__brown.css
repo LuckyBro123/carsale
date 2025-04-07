@@ -1,0 +1,27 @@
+@charset "UTF-8";
+:root {
+  --page_basic_lightgrey_bg: #F8F9FA;
+  /* ▪▪▪  Page header - site logotype, search bar, login, settings icons   ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+  --site_logo: #7e4d12;
+  --settings_menu_level1_item_hover: var(--site_logo);
+  --settings_menu_help_text: #5d5d5d;
+  --settings_menu_link: #000000;
+  --settings_menu_submenu_bg: #ded8d0;
+  --settings_menu_submenu_item_bg: #f3ece2;
+  --settings_menu_submenu_item_bg_hover: #000000;
+  --settings_menu_submenu_item_hover: white;
+  --settings_icon: #6c757d;
+  /* ▪▪▪  главное меню  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+  --main_menu_bg: #7e4d12;
+  --main_menu_bg_hover: #000000;
+  --main_menu_item: #ffffff;
+  --main_menu_item_hover: #ffffff;
+  /* ▪▪▪  footer  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+  --footer_menu_bg: #7e4d12;
+  --footer_menu_item: #FFFFFF;
+  --footer_menu_item_bg_hover: #000000;
+  /* ▪▪▪  brands menu  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+  --brands_menu_item_hover: #cc7b15;
+}
+
+/*# sourceMappingURL=color_theme__brown.css.map */

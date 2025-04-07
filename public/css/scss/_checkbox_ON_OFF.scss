@@ -1,0 +1,124 @@
+/* ▪▪▪▪▪▪▪▪▪  checkbox_ON_OFF  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.checkbox_ON_OFF {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-family: var(--main_font);
+}
+.checkbox_ON_OFF input {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+.checkbox_ON_OFF_switch {
+  display: inline-block;
+  position: relative;
+  width: 2.4rem;
+  height: 1rem;
+  border: 1px solid #808080;
+  /*background-color: #e4e4e4;*/
+  border-radius: 4px;
+  font-size: 0.9rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.checkbox_ON_OFF_switch::before,
+.checkbox_ON_OFF_switch::after {
+  content: "OFF";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.checkbox_ON_OFF_switch::before {
+  left: 0;
+  color: #606060;
+  background-color: #d4d4d4;
+}
+.checkbox_ON_OFF_switch::after {
+  content: "ON";
+  left: 100%;
+  color: white;
+  background-color: #4073c0;
+}
+.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch::before {
+  left: -100%;
+}
+.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch::after {
+  left: 0;
+}
+.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #4073c0;
+  border-color: #4073c0;
+}
+.checkbox_ON_OFF_text {
+  margin-left: 0.8rem;
+}
+/* ▪▪▪▪▪▪▪ а теперь разные цвета ▪▪▪▪▪▪*/
+.blue.checkbox_ON_OFF_switch::after {
+  background-color: #0d6efd;
+}
+.blue.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.orange.checkbox_ON_OFF_switch::after {
+  background-color: #fd7e14;
+}
+.orange.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #fd7e14;
+  border-color: #fd7e14;
+}
+.green.checkbox_ON_OFF_switch::after {
+  background-color: #40a290;
+}
+.green.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #40a290;
+  border-color: #40a290;
+}
+.pink.checkbox_ON_OFF_switch::after {
+  background-color: #e33183;
+}
+.pink.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #e33183;
+  border-color: #e33183;
+}
+.yellow.checkbox_ON_OFF_switch::after {
+  background-color: #d2a30f;
+}
+.yellow.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #d2a30f;
+  border-color: #d2a30f;
+}
+.purple.checkbox_ON_OFF_switch::after {
+  background-color: #8240e5;
+}
+.purple.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #8240e5;
+  border-color: #8240e5;
+}
+.green2.checkbox_ON_OFF_switch::after {
+  background-color: #079137;
+}
+.green2.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #079137;
+  border-color: #079137;
+}
+.red.checkbox_ON_OFF_switch::after {
+  background-color: #da0b0b;
+}
+.red.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #da0b0b;
+  border-color: #da0b0b;
+}
+.cyan.checkbox_ON_OFF_switch::after {
+  background-color: #0d8fa9;
+}
+.cyan.checkbox_ON_OFF input:checked + .checkbox_ON_OFF_switch {
+  background-color: #0d8fa9;
+  border-color: #0d8fa9;
+}

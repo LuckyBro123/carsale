@@ -1,0 +1,91 @@
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪  блок сортировки и количества элементов на странице  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.sorting_and_per_page {
+  display: flex;
+  margin: 0rem -0.25rem 0rem -0.25rem;
+  padding: 0.25rem 1rem;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+body.tablet .sorting_and_per_page {
+  justify-content: center !important;
+}
+.sorting_and_per_page > div { /*  sorting div  */
+  margin: 0;
+}
+.sorting_and_per_page {
+  label {
+    line-height: 1;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  select {
+    display: inline !important;
+    width: auto;
+    line-height: 1.3125;
+    background-position: right 0.4rem center;
+    padding-top: 0;
+    padding-right: 1.8rem;
+    padding-bottom: 0;
+    font-size: 0.875rem;
+  }
+  option {
+    min-height: 2.5rem !important;
+    padding: 1rem 1rem;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sorting_and_per_page {
+    display: flex;
+    margin-left: -18px;
+    margin-right: -18px;
+    padding-top: 0.3rem;
+    padding-left: 0.15rem !important;
+    padding-right: 0.15rem !important;
+    padding-bottom: 0.3rem;
+  }
+  .sorting_and_per_page > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sorting_and_per_page > div:not(:last-of-type) {
+    //margin-bottom: 0.5rem;
+  }
+  .sorting_and_per_page > div > label {
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+}
+.input-group_page_number {
+  display: inline-flex;
+  width: auto;
+}
+.page_number {
+  display: inline;
+  width: 3.5rem;
+  line-height: 1.3125;
+  padding: 0 0.2rem 0 0.2rem;
+  border-radius: var(--bs-border-radius-sm);
+  text-align: center;
+  font-size: 0.875rem;
+}
+.btn_page_number_submit svg {
+  vertical-align: top;
+}
+.btn_page_number_submit {
+  line-height: 1;
+  padding: 0.1rem 0.25rem 0 0.25rem;
+  border: 1px solid #bdbdbd !important;
+  border-top-right-radius: var(--bs-border-radius-sm) !important;
+  border-bottom-right-radius: var(--bs-border-radius-sm) !important;
+}
+@media only screen and (max-width: 575.98px) {
+  /* PHONE */
+  .page_number {
+    width: 4.5rem !important;
+  }
+
+  .btn_page_number_submit {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

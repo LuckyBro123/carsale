@@ -1,0 +1,164 @@
+/* ▪▪▪▪▪▪▪▪▪▪▪  Page header  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+/* ▪▪▪▪▪▪▪▪  logo, search bar, login buttons ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'basic_icons';
+  src: url("../font/basic_icons.woff2") format("woff2"),
+  url("../font/basic_icons.woff") format("woff"), /* это фактически не нужно вообще, оставил как пример */
+  url("../font/basic_icons.ttf") format("truetype");                  /* это фактически не нужно вообще, оставил как пример */
+}
+.car_sale_logo {
+  white-space: nowrap;
+  height: 4rem;
+  text-decoration: none;
+}
+
+#svg_logo {
+  color: var(--site_logo) !important;
+}
+.svg_logo path {
+  fill: var(--site_logo);
+}
+.header_menu_line_2 .nav-link:hover {
+  background-color: #000000;
+}
+.for_logged_user svg {
+  color: var(--bs-gray-600);
+}
+.for_logged_user span {
+  padding-left: 0.5rem;
+  color: var(--bs-gray-600);
+  white-space: nowrap;
+}
+@media only screen and (max-width: 575.98px) {
+  .for_logged_user svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .for_logged_user span {
+    display: block;
+    max-width: 60vw;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+  }
+  .for_logged_user button {
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  .i_header_logo {
+    position: relative;
+    width: 4rem;
+    height: 3rem;
+    margin-left: -0.5rem;
+  }
+  .i_header_logo div::before {
+    content: '\e984';
+    position: absolute;
+    top: 0.1rem;
+    color: var(--site_logo);
+    font-family: 'basic_icons';
+    font-size: 2.8rem;
+  }
+  .navbar-toggler {
+    margin-right: 0.2rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .for_logged_user {
+    max-width: 12rem;
+  }
+  .for_logged_user span {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    overflow-x: hidden;
+  }
+}
+/* ▪▪▪▪▪▪▪▪▪▪ ПОИСК ВВЕРХУ ▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.search_wrapper {
+  position: relative;
+}
+.black_rect_fullscreen {
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  transition-duration: 200ms;
+  transition-property: opacity;
+  z-index: 50 !important;
+}
+.logo_block {
+  position: relative;
+  background-color: var(--page_basic_lightgrey_bg);
+  z-index: 100 !important;
+}
+.logo_block_mobile {
+  position: relative;
+  background-color: var(--page_basic_lightgrey_bg);
+  z-index: 100 !important;
+}
+#search_mobile {
+  border-left: 0px;
+  border-radius: 0;
+}
+.dynamic_search_results, .dynamic_search_results_mobile {
+  position: absolute;
+  top: 2rem;
+  background-color: #FFFFFF;
+  border: 1px solid #AAAAAA;
+  border-radius: 0.25rem !important;
+  z-index: 500;
+}
+.dynamic_search_results ul, .dynamic_search_results_mobile ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  text-decoration: none;
+}
+.dynamic_search_results li, .dynamic_search_results_mobile li {
+  list-style-type: none;
+}
+.dynamic_search_results_mobile {
+  max-width: 100vw;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #000000;
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+.dynamic_search_results_mobile .dynamic_search_list_item a {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+.dynamic_search_list_item a {
+  display: block;
+  line-height: 1.5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #777777;
+  background-color: #FFFFFF;
+  white-space: pre;
+  white-space: pre;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.dynamic_search_list_item a:hover {
+  color: #FFFFFF;
+  background: #444444;
+}
+.additional_message_below {
+  margin-top: 0.3rem;
+  text-align: end;
+  font-style: italic;
+}
+.additional_message_below:hover {
+  color: #000000 !important;
+  background-color: #E1E1E1 !important;
+  cursor: pointer;
+}
+@import "settings_icon_menu";

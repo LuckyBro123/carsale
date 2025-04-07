@@ -1,0 +1,103 @@
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ IMPORTS ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+@import "common_styles";
+@import "page_header__logo_search_bar_login_buttons";
+@import "main_menu_red_in_header";
+@import "menu_in_footer";
+@import "switch_language";
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.contacts_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #dedede;
+}
+.contacts {
+  max-width: 900px;
+  //max-height: 600px;
+  margin: 3rem;
+  //overflow: hidden;
+  background-color: #fcfbfb;
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 575.98px) {
+  .contacts {
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .contacts {
+    line-height: 1;
+    text-align: center;
+  }
+}
+.yellow_letter {
+  position: relative;
+  top: 30px;
+  right: 40px;
+}
+.email_picture_bg_blue {
+  background: linear-gradient(55deg, #34a3d3 50%, #1346a6 50.1%);
+}
+.email_picture_bg_gray {
+  background: linear-gradient(55deg, #818181 50%, #494747 50.1%);
+}
+.email_picture_bg_pink {
+  background: linear-gradient(55deg, #a83fc0 50%, #6d0c79 50.1%);
+}
+.email_picture_bg_emerald {
+  background: linear-gradient(55deg, #2c985f 50%, #0c4f2d 50.1%);
+}
+.email_picture_holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+/*
+.email_picture_bg_red {
+  background: linear-gradient(55deg, #d33f34 50%, #a61322 50.1%);
+}
+.email_picture_bg_orange {
+  background: linear-gradient(55deg, #eaa23d 50%, #be7311 50.1%);
+}
+.email_picture_bg_green {
+  background: linear-gradient(55deg, #34d341 50%, #13a627 50.1%);
+}
+.email_picture_bg_yellow {
+  background: linear-gradient(55deg, #d3c634 50%, #a69213 50.1%);
+}
+.email_picture_bg_brown {
+  background: linear-gradient(55deg, #946843 50%, #4f320c 50.1%);
+}
+*/
+/* FORM-GROUP ********************/
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  padding-left: 0.1rem;
+  padding-bottom: 0.3rem;
+  font-weight: bolder;
+}
+.form-group input {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+.btn_send_data {
+  color: #FFFFFF;
+  background: linear-gradient(to right, #f1da36 0%, #ec721d 99%);
+  border: 0;
+  border-radius: 0;
+  transition-duration: 200ms;
+  transition-property: color, background;
+}
+.btn_send_data:hover {
+  color: #FFFFFF;
+  background: linear-gradient(to right, #ff9ac5 0%, #bd1158 99%);
+  border: 0;
+  border-radius: 0;
+}

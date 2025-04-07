@@ -1,0 +1,156 @@
+$photo-width: 5.5rem;
+$photo-height: 3.575rem;
+$photo-gap: 0.25rem;
+$transition-speed: 0.3s;
+$car-card-border-radius: 0.1rem;
+/* ······························································ */
+.car_row_container {
+  border-bottom: 1px solid #e0e0e0;
+}
+.car_row_container:nth-of-type(1) {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.car_row_container:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+.car_row_container:nth-of-type(even) {
+  background-color: #F8F8F8;
+}
+.car_row_container {
+  .car_row {
+    display: flex;
+    justify-content: flex-start !important;
+    //gap: 0;
+    position: relative;
+    width: 100%;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    overflow: hidden;
+  }
+  .car_photos {
+    display: flex;
+    gap: 0 $photo-gap;
+    flex-shrink: 0;
+    width: calc($photo-width);
+    height: $photo-height;
+    overflow: hidden;
+    transition: width $transition-speed ease;
+  }
+  .car_photos {
+    .row_photo_holder {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      width: $photo-width;
+      height: $photo-height;
+      border-radius: $car-card-border-radius;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    .row_no_photo {
+      display: flex;
+      flex-shrink: 0;
+      justify-content: center;
+      align-items: center;
+      width: $photo-width;
+      height: $photo-height;
+      color: #000000;
+      background-color: #EAEAEA;
+      border-radius: $car-card-border-radius;
+      outline: 1px solid #000000;
+      overflow: hidden;
+      //object-fit: cover;
+    }
+    img {
+      display: block;
+      //width: 100%;
+      width: $photo-width;
+      //border-radius: 0;
+      height: auto;
+      min-height: $photo-height;
+      max-height: $photo-height;
+      border-radius: $car-card-border-radius;
+      overflow: hidden;
+      //height: $photo-height;
+      //border: 2px solid #000000 !important;
+      object-fit: contain;
+    }
+    .row_photo_holder div {
+      display: none;
+    }
+    .row_photo_holder img {
+      display: inline;
+    }
+    .row_photo_holder.photo_not_loaded div {
+      display: flex;
+    }
+    .row_photo_holder.photo_not_loaded img {
+      display: none;
+    }
+  }
+  .car_info {
+    display: flex;
+    gap: 0 1rem;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+    overflow-x: hidden;
+    transition: transform $transition-speed ease;
+  }
+  .car_name {
+    color: #000000;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .car_details {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #777777;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .car_price {
+    padding-right: 0.5rem;
+    color: #000000;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .car_row:hover .car_photos {
+    //width: calc(($photo-width + $photo-gap) * 5);
+  }
+  .car_row:hover .car_photos.photos2 {
+    width: calc(($photo-width + $photo-gap) * 2);
+  }
+  .car_row:hover .car_photos.photos3 {
+    width: calc(($photo-width + $photo-gap) * 3);
+  }
+  .car_row:hover .car_photos.photos4 {
+    width: calc(($photo-width + $photo-gap) * 4);
+  }
+  .car_row:hover .car_photos.photos5 {
+    width: calc(($photo-width + $photo-gap) * 5);
+  }
+  .car_row:hover .car_photos.photos6 {
+    width: calc(($photo-width + $photo-gap) * 6);
+  }
+  .car_row:hover .car_photos.photos7 {
+    width: calc(($photo-width + $photo-gap) * 7);
+  }
+  .car_row:hover .car_photos.photos8 {
+    width: calc(($photo-width + $photo-gap) * 8);
+  }
+  .car_row:hover .car_photos.photos9 {
+    width: calc(($photo-width + $photo-gap) * 9);
+  }
+  .car_row:hover .car_photos.photos10 {
+    width: calc(($photo-width + $photo-gap) * 10);
+  }
+}

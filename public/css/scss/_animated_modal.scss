@@ -1,0 +1,146 @@
+/* ▪▪▪▪▪▪▪▪▪▪▪▪ кнопка и анимированное окно с инфой, зачем создан этот сайт   ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+$transition-duration: 0.8s;
+$transition-easing: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$bounce-easing: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+/*
+$closed-width: 200px;
+$closed-height: 80px;
+*/
+$closed-width: 8rem;
+$closed-height: auto;
+$opened-width: 30rem;
+$opened-height: 15rem;
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+.animated_modal_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+.animated_modal_holder {
+  display: flex;
+  //display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: $closed-width;
+  height: $closed-height;
+  //background-color: #f5f5f5;
+  text-align: center;
+  font-size: 18px;
+  user-select: none;
+  transition: width $transition-duration $transition-easing, height $transition-duration $transition-easing, transform $transition-duration $bounce-easing;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  //perspective: 1000px;
+}
+.animated_btn {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: $closed-height;
+  color: #fff;
+  background-color: #F44336;
+  cursor: pointer;
+  transition: background 0.15s ease, line-height $transition-duration $transition-easing;
+  backface-visibility: hidden;
+}
+.animated_btn:hover {
+  background-color: lighten(#F44336, 10%);
+}
+.animated_modal_holder.is-open .animated_btn {
+  line-height: $opened-height;
+  pointer-events: none;
+}
+.animated_modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #222;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: box-shadow $transition-duration ease;
+  transform: translateZ(-2px) rotateX(180deg);
+}
+.animated_modal p {
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+.animated_modal button {
+  width: 30%;
+  margin: 0 5px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.15s ease;
+  &:focus {
+    outline: 0;
+  }
+  &.yes {
+    color: #fff;
+    background-color: #2196F3;
+    &:hover {
+      background-color: lighten(#2196F3, 10%);
+    }
+  }
+  &.no {
+    color: #2196F3;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+.animated_modal_holder.is-open .animated_modal {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+.animated_modal_holder[data-direction="left"] .animated_modal,
+.animated_modal_holder[data-direction="right"] .animated_modal {
+  transform: translateZ(-2px) rotateY(180deg);
+}
+.animated_modal_holder.is-open {
+  width: $opened-width;
+  height: $opened-height;
+}
+.animated_modal_holder[data-direction="top"].is-open {
+  transform: rotateX(180deg);
+}
+.animated_modal_holder[data-direction="right"].is-open {
+  transform: rotateY(180deg);
+}
+.animated_modal_holder[data-direction="bottom"].is-open {
+  transform: rotateX(-180deg);
+}
+.animated_modal_holder[data-direction="left"].is-open {
+  transform: rotateY(-180deg);
+}
+
+
+.animated_modal button {
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.15s ease;
+  &:focus {
+    outline: 0;
+  }
+  &.yes {
+    color: #fff;
+    background-color: #2196F3;
+    &:hover {
+      background-color: lighten(#2196F3, 10%);
+    }
+  }
+  &.no {
+    color: #2196F3;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}

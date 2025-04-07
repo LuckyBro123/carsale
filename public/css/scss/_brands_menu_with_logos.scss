@@ -1,0 +1,167 @@
+/* ▪▪▪▪▪▪▪▪ МЕНЮ ИКОНОК БРЭНДОВ ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.brands_menu_logos {
+  padding-left: 0;
+}
+.brands_menu_item {
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+.brands_menu_item {
+  a {
+    display: inline-block;
+    margin-top: 0.8rem !important;
+  }
+  div[class^="i_"] {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    color: var(--bs-gray-600);
+    text-align: center;
+    font-family: 'Brands_icons';
+    font-size: 2.5rem;
+  }
+  div:nth-of-type(2) {
+    text-align: center;
+    white-space: normal;
+    font-size: 1rem;
+  }
+}
+.brands_menu_item > a {
+  color: var(--bs-gray-600);
+  text-decoration: none;
+}
+.brands_menu_item > a:hover, .brands_menu_item > a:hover > div {
+  color: var(--brands_menu_item_hover);
+  text-decoration: none;
+}
+/* ГОРИЗОНТАЛЬНАЯ ПРОКРУТКА ДЛЯ МЕНЮ */
+.nav_scroller {
+  position: relative;
+  z-index: 2;
+}
+.nav_scroller ul {
+  display: flex;
+  margin-top: -1px;
+  padding-bottom: 1rem;
+  text-align: center;
+  white-space: nowrap;
+  /*-webkit-overflow-scrolling: touch;*/
+}
+body.tablet .nav_scroller ul {
+  white-space: nowrap;
+  overflow-x: auto;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .nav_scroller ul {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+}
+/* ▪▪▪▪▪▪ ROW-COLS для меню иконок брэндов ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.row-cols-8 {
+  width: 12.5%;
+}
+.row-cols-10 {
+  width: 10%;
+}
+.row-cols-12 > li {
+  min-width: 4.875rem;
+  max-width: 8.1%;
+}
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ ИКОНКИ БРЭНДОВ ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Brands_icons';
+  src: url("../font/logo_brands_filtered.woff2") format("woff2"),
+  url("../font/logo_brands_filtered.woff") format("woff"), /* это фактически не нужно вообще, оставил как пример */
+  url("../font/logo_brands.ttf") format("truetype");                  /* это фактически не нужно вообще, оставил как пример */
+}
+.i_audi::before {
+  content: '\ea05';
+}
+.i_bmw::before {
+  content: '\e900';
+}
+.i_cadillac::before {
+  content: '\e9eb';
+}
+.i_cherry::before {
+  content: '\e9e3';
+}
+.i_chevrolet::before {
+  content: '\e9e2';
+  margin-left: auto;
+  margin-right: auto;
+}
+.i_chrysler::before {
+  content: '\e9da';
+}
+.i_dodge::before {
+  content: '\e9d2';
+}
+.i_fiat::before {
+  content: '\e9c0';
+}
+.i_ford::before {
+  content: '\e9be';
+}
+.i_honda::before {
+  content: '\e9aa';
+}
+.i_hyundai::before {
+  content: '\e9a0';
+}
+.i_kia::before {
+  content: '\e98c';
+}
+.i_mazda::before {
+  content: '\e966';
+}
+.i_mercedes::before {
+  content: '\e962';
+}
+.i_mitsubishi::before {
+  content: '\e95c';
+}
+.i_nissan::before {
+  content: '\e952';
+}
+.i_opel::before {
+  content: '\e94f';
+}
+.i_peugeot::before {
+  content: '\e948';
+}
+.i_renault::before {
+  content: '\e93d';
+}
+.i_skoda::before {
+  content: '\e929';
+}
+.i_suzuki::before {
+  content: '\e922';
+}
+.i_toyota::before {
+  content: '\e91c';
+}
+.i_volkswagen::before {
+  content: '\e90d';
+}
+.i_jeep::before {
+  content: '\e995';
+}
+.i_landrover::before {
+  content: '\e97a';
+}
+.i_citroen::before {
+  content: '\e9df';
+}
+.i_seat::before {
+  content: '\e92f';
+}

@@ -1,0 +1,181 @@
+.modal-backdrop_opacity_075 {
+  --bs-backdrop-opacity: 0.75;
+}
+#what_is_it_btn {
+  color: #E7A900;
+  background-color: #fcf9ef;
+}
+#what_is_it_btn:hover {
+  color: #ffffff;
+  background-color: #FFC107;
+}
+#what_is_it_modal .modal-dialog {
+  max-width: 600px;
+  transition: all 0.15s ease-out;
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  perspective: 1000px;
+}
+#what_is_it_modal .modal-content {
+  position: relative;
+  padding: 0 !important;
+  border: none;
+  overflow: hidden;
+}
+#what_is_it_modal .modal-header {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(45deg, #9bd925 0%, #19bbee 100%);
+}
+#what_is_it_modal .modal-body {
+  margin-top: -165px;
+  padding-top: 0;
+  padding-bottom: 1.1rem;
+  z-index: 2;
+}
+#what_is_it_modal .modal-body h1 {
+  padding-bottom: 21px;
+  color: #FFFFFF;
+  font-size: 2.6em;
+  font-weight: bold;
+}
+.chip_dale_face {
+  width: 150px;
+  height: auto;
+}
+#what_is_it_modal {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+.bottom_diagonal_cuts {
+  border: 0;
+}
+.bottom_diagonal_cuts::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 50%;
+  height: 60px;
+  background-color: #fff;
+  overflow: visible;
+  transform: skewY(10deg);
+  z-index: 1;
+}
+.bottom_diagonal_cuts::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 50%;
+  height: 60px;
+  background-color: #fff;
+  overflow: visible;
+  transform: skewY(-10deg);
+  z-index: 1;
+}
+.what_is_it_text {
+  line-height: 1.35;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  color: #111111;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.what_is_it_text__page_bottom {
+  line-height: 1.35;
+  padding: 0;
+  //padding: 1.5rem 2rem 1.5rem 2rem;
+  color: #000000;
+  //background-color: #0dcaf0;
+  text-align: justify;
+  text-align-last: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 575.98px) {
+  /*это меньше чем sm. Т.е. это все телефоны и планшеты, когда и те, и другие вертикально используются*/
+}
+/* классы -sm-   хз для чего это. Телефоны это 320 - 428 точек. Планшеты тоже меньше 576 */
+@media only screen and (min-width: 576px) {
+  .what_is_it_text__page_bottom {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+.show_filters_btn_holder {
+  order: 2;
+}
+.statistics_btn_holder {
+  order: 4;
+}
+.btn_what_is_it_close {
+  width: 10rem;
+  background-color: #da0d43;
+  border: 0;
+  border-radius: 0px;
+  transition-duration: 250ms;
+  transition-property: background-color;
+}
+.btn_what_is_it_close:hover {
+  background-color: #0f69f1;
+}
+/* PHONE */
+@media only screen and (max-width: 575.98px) {
+  #what_is_it_modal .modal-dialog {
+    max-width: none;
+  }
+  #what_is_it_modal .modal-header {
+    position: relative;
+    height: 180px;
+    background: linear-gradient(45deg, #9bd925 0%, #19bbee 100%);
+  }
+  #what_is_it_modal .modal-body {
+    margin-top: -180px;
+    padding-top: 1rem;
+    z-index: 2;
+  }
+  #what_is_it_modal .modal-body h1 {
+    padding-bottom: 16px;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  .chip_dale_face {
+    width: 120px;
+    height: auto;
+  }
+  .what_is_it_text {
+    line-height: 1.35;
+    padding: 1.1rem 0rem 1.1rem 0rem;
+    color: #111111;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .what_is_it_btn_holder {
+    padding-left: 12px;
+    padding-right: 12px;
+    order: 1;
+  }
+  .show_filters_btn_holder {
+    display: flex;
+    padding-left: 12px;
+  }
+  .statistics_btn_holder {
+    padding-right: 12px;
+  }
+}
+/* TABLET */
+@media only screen and (min-width: 576px) {
+  .what_is_it_btn_holder {
+    padding-left: 12px;
+    padding-right: 12px;
+    order: 1;
+  }
+}
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+  .what_is_it_btn_holder {
+    padding-left: 12px;
+    padding-right: 8px;
+    order: 3;
+  }
+}

@@ -1,0 +1,100 @@
+.error_modal {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.error_modal .modal-dialog {
+  transition: all 0.15s ease-out;
+  //transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  //perspective: 1000px;
+}
+.error_modal .modal-content {
+  position: relative;
+  padding: 0 !important;
+  border: none;
+}
+.error_modal .top-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+  left: calc((100% - 100px) / 2);
+  width: 100px;
+  height: 100px;
+  line-height: 48px;
+  background-color: #da0d43;
+  font-size: 3.6rem;
+  font-weight: bold;
+  vert-align: middle;
+}
+.error_modal .modal-body {
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+  z-index: 2;
+}
+.error_modal .modal-body h1 {
+  padding-top: 4.5rem;
+  color: #111111;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+.error_modal_text {
+  line-height: 1.35;
+  padding: 1.2rem 2rem 2.0rem 2rem;
+  color: #111111;
+  font-size: 1.5rem;
+}
+.btn_error_modal_close {
+  width: 70%;
+  line-height: 1.7;
+  background-color: #da0d43;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  transition-duration: 250ms;
+  transition-property: background-color;
+}
+.btn_error_modal_close:hover {
+  background-color: #0f69f1;
+}
+/* PHONE */
+@media only screen and (max-width: 575.98px) {
+  .error_modal {
+    .modal-dialog {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      max-width: none;
+    }
+    .modal-header {
+      position: relative;
+      height: 180px;
+      background: linear-gradient(45deg, #9bd925 0%, #19bbee 100%);
+    }
+    .modal-body {
+      margin-top: -50px;
+      padding-bottom: 1.1rem;
+      z-index: 2;
+    }
+    .top-circle {
+      top: 0px;
+      font-size: 2.5rem;
+    }
+    .modal-body h1 {
+      padding-top: 5rem;
+      font-size: 2em;
+      //font-weight: bold;
+    }
+    .error_modal_text {
+      padding: 1rem 0rem 1.5rem 0rem;
+      font-size: 1.2rem;
+    }
+    .btn_error_modal_close {
+      line-height: 1.5;
+      border-radius: 8px;
+      font-size: 1.2rem;
+    }
+  }
+}
+/* TABLET */
+/* DESKTOP */

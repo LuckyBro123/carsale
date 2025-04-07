@@ -1,0 +1,33 @@
+/* ▪▪▪▪▪▪▪▪▪▪ СИРЕНЕВОЕ МЕНЮ  в подвале ▪▪▪▪▪▪▪*/
+.main_menu_footer {
+  background-color: var(--footer_menu_bg);
+  border-bottom: 0 !important;
+}
+.main_menu_footer {
+  .nav-link {
+    line-height: 2.2;
+    padding-top: 0.18rem;
+    padding-bottom: 0;
+    color: var(--footer_menu_item) !important;
+    vertical-align: center !important;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  .nav-link:hover {
+    background-color: var(--footer_menu_item_bg_hover) !important;
+  }
+}
+.mobile_navbar .main_menu_footer .nav-link {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 575.98px) {
+  .main_menu_footer .nav-link {
+    line-height: 1.5 !important;
+    padding-top: 0 !important;
+  }
+  .main_menu_footer .nav {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+}

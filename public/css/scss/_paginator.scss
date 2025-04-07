@@ -1,0 +1,29 @@
+/* ▪▪▪▪▪▪▪▪▪▪ PAGINATOR ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.paginator_container .pagination {
+  justify-content: end;
+}
+.paginator_container .page-link {
+  color: #6C757D;
+  background-color: #FFFFFF;
+}
+.page-item.active .page-link {
+  color: #FFFFFF;
+  background-color: #6C757D;
+  border-color: #6C757D;
+}
+.pagination .page-link {
+  color: #6C757D;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.pagination .page-item:not(.active) .page-link:hover {
+  background-color: #eeeeee;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 575.98px) {
+  .pagination .page-link {
+    line-height: 1;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.9rem;
+  }
+}

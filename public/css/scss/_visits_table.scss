@@ -1,0 +1,108 @@
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ VISITs LIST ▪▪▪▪▪▪▪▪▪▪▪▪*/
+.visits_table_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 !important;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.columns_sorting {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  background-color: #ebf8dd;
+  border-top: 1px solid #9dd729;
+  border-bottom: 1px solid #9dd729;
+}
+.columns_sorting > a {
+  display: flex;
+  justify-content: center;
+  color: #2D3748;
+  text-align: center;
+  font-size: 0.85rem !important;
+}
+.columns_sorting > a:hover {
+  color: #FFFFFF;
+  background-color: #84A789;
+  cursor: pointer;
+}
+.columns_sorting.ip_asc .sorting_ip::after,
+.columns_sorting.method_asc .sorting_method::after,
+.columns_sorting.url_asc .sorting_url::after,
+.columns_sorting.time_asc .sorting_time::after {
+  content: "ↆ";
+  display: inline-block;
+  padding-right: 0.5rem;
+  transform: rotate(180deg);
+}
+.columns_sorting.ip_desc .sorting_ip::after,
+.columns_sorting.method_desc .sorting_method::after,
+.columns_sorting.url_desc .sorting_url::after,
+.columns_sorting.time_desc .sorting_time::after {
+  content: "ↆ";
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+.columns_sorting > .sorting_ip {
+  flex: 0 0 9.2rem;
+}
+.columns_sorting > .country {
+  flex: 0 0 9.5rem;
+  cursor: default !important;
+}
+.columns_sorting > .sorting_method {
+  flex: 0 0 4rem;
+}
+.columns_sorting > .sorting_url {
+  flex: 1 1 auto;
+}
+.columns_sorting > .sorting_time {
+  flex: 0 0 10rem;
+}
+.visits_table {
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  border-left: 1px solid #D7B729;
+  border-right: 1px solid #D7B729;
+  padding-right: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.visits_table_item {
+  display: flex;
+  //justify-content: space-between;
+  line-height: 1;
+  padding: 0.3rem 1rem;
+  color: #000000;
+  background-color: #FDFCF2;
+}
+.visits_table_item:hover {
+  color: #F4FD07;
+  background-color: #4B5563;
+}
+.visits_table_item > span:nth-child(1) {
+  flex: 0 0 9.2rem;
+}
+.visits_table_item > span:nth-child(2) {
+  flex: 0 0 9.5rem;
+}
+.visits_table_item > span:nth-child(3) {
+  flex: 0 0 4rem;
+}
+.visits_table_item > span:nth-child(4) {
+  flex: 1 1 auto;
+  color: #5f6b7c;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.visits_table_item:hover > span:nth-child(4) {
+  color: #ffffff;
+}
+.visits_table_item > span:nth-child(5) {
+  flex: 0 0 10rem;
+}

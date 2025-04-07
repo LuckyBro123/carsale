@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Allow direct access to storage/app/public
+<IfModule mod_rewrite.c>
+    RewriteRule ^storage/app/public/ - [L]
+    RewriteRule ^storage/(.*) storage/app/public/$1 [L]
+    RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+</IfModule>
+
+DirectoryIndex index.php

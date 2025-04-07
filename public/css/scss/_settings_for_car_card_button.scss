@@ -1,0 +1,113 @@
+#settings_for_ext_car_card_global_container {
+  border-top: 1px solid var(--bs-gray-500);
+  border-bottom: 1px solid var(--bs-gray-500);
+}
+.settings_for_car_card_holder {
+  flex: 0 0 auto;
+  width: auto;
+  padding-left: 0 !important;
+  order: 5;
+}
+body.tablet .settings_for_car_card_holder {
+  display: none !important;
+}
+#settings_for_car_card_btn {
+  padding: 0;
+  color: #727272;
+  border: 0;
+  aspect-ratio: 1 / 1;
+}
+#settings_for_car_card_btn svg:nth-of-type(1) {
+  display: inline;
+}
+#settings_for_car_card_btn svg:nth-of-type(2) {
+  display: none;
+}
+#settings_for_car_card_btn.active svg:nth-of-type(1) {
+  display: none;
+}
+#settings_for_car_card_btn.active svg:nth-of-type(2) {
+  display: inline;
+}
+#settings_for_car_card_btn:hover {
+  color: var(--main_menu_bg);
+}
+#layout_ext_car_card {
+  position: static;
+  margin: 1rem;
+}
+#layout_ext_car_card .for_layout {
+  display: flex !important;
+}
+#layout_ext_car_card .not_for_layout {
+  display: none !important;
+}
+#editor_for_settings_layout {
+  flex: 1;
+  align-self: flex-start;
+  max-width: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-radius: 0.4rem;
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+#layout_ext_car_card__holder {
+  flex: 0 1 0%;
+}
+.btn_color__var_main_menu_bg {
+  color: #ffffff;
+  background-color: var(--main_menu_bg);
+}
+.btn_color__var_main_menu_bg:hover {
+  color: #ffffff;
+  color: var(--main_menu_bg);
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 2px var(--main_menu_bg) !important;
+}
+.btn_color__gray_green {
+  color: #ffffff;
+  background-color: #4d756b;
+}
+.btn_color__gray_green:hover {
+  color: #dfece9;
+  color: #4d756b;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 2px #4d756b !important;
+}
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪  кнопки CARDVIEW и LISTVIEW  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.icon_viewmode {
+  border: none;
+  padding-top: 0.15rem;
+  padding-bottom: 0;
+  user-select: none !important;
+  /* Стили фокуса */
+  &:focus, &:active {
+    outline: none;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+.icon_viewmode svg {
+  padding: 0;
+  color: #bbbbbb;
+  border: 0;
+  aspect-ratio: 1 / 1;
+}
+.viewmode_on:hover {
+  text-decoration: none;
+}
+.icon_viewmode:hover svg {
+  color: #727272;
+}
+.icon_viewmode:active {
+  border: #92bce0
+}
+.viewmode_on {
+}
+.viewmode_on svg {
+  color: #727272;
+}

@@ -1,0 +1,25 @@
+/* ▪▪▪▪▪▪▪▪▪▪ КРАСНОЕ МЕНЮ  в шапке ▪▪▪▪▪▪▪*/
+.main_menu_red {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  background-color: var(--main_menu_bg);
+}
+.main_menu_red {
+  .nav {
+    line-height: 2.5;
+  }
+  .nav-link {
+    color: var(--main_menu_item) !important;
+    font-size: 1.05rem;
+    transition-property: background-color;
+    transition-duration: 250ms;
+  }
+  .nav-link:hover {
+    color: var(--main_menu_item_hover) !important;
+    background-color: var(--main_menu_bg_hover) !important;
+  }
+}
+.mobile_navbar .main_menu_red .nav-link {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* ▪▪▪▪▪▪▪▪▪▪▪▪ добавляю новый вариант сетки - 5 колонок ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ */
+.col-5cols {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .col-sm-5cols {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .col-md-5cols {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .col-lg-5cols {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .col-xl-5cols {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+@media (min-width: 1400px) {
+  .col-xxl-5cols {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1459.98px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1460px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1401px;
+  }
+}
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ */
+/* ▪▪▪▪▪▪▪▪▪▪▪▪ корректирую стили бутстрапа ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ */
+.btn, span, a, p, div, label, button, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main_font);
+}
+
+.btn {
+  border-radius: 0.2rem;
+}
+
+/* ▪▪▪▪▪▪▪ УБИРАЮ ПРОТИВНУЮ ОБВОДКУ КНОПОК при фокусе ▪▪▪▪▪▪▪*/
+button, .accordion-button:focus, .form-control:focus, *:focus[class^=btn], *:active[class^=btn] {
+  box-shadow: 0 0 0 0 !important;
+}
+
+.btn-check:active + .btn-outline-secondary:focus, .btn-check:checked + .btn-outline-secondary:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus, .btn-outline-secondary:active:focus, select:focus, .page-link:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+/* ▪▪▪▪▪▪▪▪▪▪▪▪ добавляю новые цвета для badge ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ */
+.text-bg-orange {
+  color: #ffffff !important;
+  background-color: #e38408 !important;
+}
+
+.text-bg-emerald {
+  color: #ffffff !important;
+  background-color: #1d5b52 !important;
+}
+
+.text-bg-pink {
+  color: #ffffff !important;
+  background-color: #cd08e3 !important;
+}
+
+.text-bg-green {
+  color: #ffffff !important;
+  background-color: #1bd52b !important;
+}
+
+.text-bg-brown {
+  color: #ffffff !important;
+  background-color: #624c2c !important;
+}
+
+.text-bg-yellow {
+  color: #000000 !important;
+  background-color: #f1ee1b !important;
+}
+
+.text-bg-lightblue {
+  color: #000000 !important;
+  background-color: #8bdcfa !important;
+}
+
+.text-bg-lightpink {
+  color: #ffffff !important;
+  background-color: #ff47c5 !important;
+}
+
+.text-bg-bluegreen {
+  color: #ffffff !important;
+  background-color: #20e5b0 !important;
+}
+
+.table-bordered {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/*# sourceMappingURL=bootstrap_addition.css.map */

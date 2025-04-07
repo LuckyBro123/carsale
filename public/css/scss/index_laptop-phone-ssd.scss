@@ -1,0 +1,22 @@
+
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ IMPORTS ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+
+@import "common_styles";
+@import "page_header__logo_search_bar_login_buttons";
+@import "main_menu_red_in_header";
+@import "btn_checkbox";
+@import "filters";
+@import "car_card";
+@import "sorting_and_per_page";
+@import "paginator";
+@import "menu_in_footer";
+@import "switch_language";
+@import "what_is_it_modal";
+
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+// фотка карточки для laptop / phone / ssd
+.laptop-phone-ssd_card_photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

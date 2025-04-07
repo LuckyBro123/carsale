@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ IMPORTS ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.column {
+  flex-wrap: wrap;
+  margin: 1rem 0.3rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid rgba(1, 1, 1, 0.4);
+  border-radius: 0.25rem;
+}
+
+#column::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #f0f0f0; /* Grey background */
+  text-align: center;
+  font-weight: bold;
+}
+
+.column1 {
+  background-color: #2c985f;
+}
+
+#column1::before {
+  content: "COLUMN 1";
+}
+
+.column2 {
+  background-color: #0dcaf0;
+}
+
+#column2::before {
+  content: "COLUMN 2";
+}
+
+.column3 {
+  background-color: #a43540;
+}
+
+#column3::before {
+  content: "COLUMN 3";
+}
+
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.block {
+  flex: 0 0 100%;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#block1 {
+  line-height: 100px;
+  background-color: #c5d9a3;
+}
+
+#block2 {
+  line-height: 80px;
+  background-color: #e2ebf8;
+}
+
+#block1 {
+  line-height: 100px;
+  background-color: #c5d9a3;
+}
+
+#block2 {
+  line-height: 80px;
+  background-color: #e2ebf8;
+}
+
+#block3 {
+  line-height: 110px;
+  background-color: #c5d9a3;
+}
+
+#block4 {
+  line-height: 120px;
+  background-color: #e2ebf8;
+}
+
+#block5 {
+  line-height: 70px;
+  background-color: #e2ebf8;
+}
+
+#block6 {
+  line-height: 130px;
+  background-color: #c5d9a3;
+}
+
+#block7 {
+  line-height: 60px;
+  background-color: #e2ebf8;
+}
+
+#block8 {
+  line-height: 110px;
+  background-color: #e2ebf8;
+}
+
+#block9 {
+  line-height: 100px;
+  background-color: #c5d9a3;
+}
+
+#block10 {
+  line-height: 90px;
+  background-color: #e2ebf8;
+}
+
+#block11 {
+  line-height: 80px;
+  background-color: #e2ebf8;
+}
+
+#block12 {
+  line-height: 120px;
+  background-color: #e2ebf8;
+}
+
+#block13 {
+  line-height: 70px;
+  background-color: #e2ebf8;
+}
+
+#block14 {
+  line-height: 60px;
+  background-color: #e2ebf8;
+}
+
+/*# sourceMappingURL=test_3columns_14blocks.css.map */

@@ -1,0 +1,211 @@
+:root {
+  // цвета иконок для элементов меню цветовых тем
+  --settings_menu_submenu_color_theme_icon_red: #DC3545;
+  --settings_menu_submenu_color_theme_icon_black: #000000;
+  --settings_menu_submenu_color_theme_icon_blue: #0c84ff;
+  --settings_menu_submenu_color_theme_icon_orange: #e38408;
+  --settings_menu_submenu_color_theme_icon_green: #1bd52b;
+  --settings_menu_submenu_color_theme_icon_pink: #cd08e3;
+  --settings_menu_submenu_color_theme_icon_brown: #624c2c;
+  --settings_menu_submenu_color_theme_icon_emerald: #1A5149;
+}
+.settings_menu {
+  display: flex;
+  justify-content: center;
+}
+.thin_stub_at_the_top {
+  height: 0.4rem;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+}
+.settings_menu_level1_item:hover i::before {
+  color: var(--settings_menu_level1_item_hover);
+}
+.settings_menu_level1_item {
+  position: relative;
+  margin-right: 0.75rem;
+  padding-top: 0.0rem;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+.settings_menu_level1_item:last-of-type {
+  margin-right: 0rem;
+}
+.settings_menu_help {
+  display: block;
+  position: relative;
+  line-height: 1;
+  background-color: var(--settings_menu_submenu_bg);
+  padding: 0.5rem 1rem 0.4rem 1rem;
+  color: var(--settings_menu_help_text);
+  cursor: default;
+  white-space: normal;
+  text-decoration: none;
+}
+.settings_menu_item {
+  display: block;
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+}
+.settings_menu_link {
+  display: flex;
+  align-items: end;
+  color: var(--settings_menu_link);
+  text-decoration: none;
+}
+.settings_menu_submenu {
+  display: none;
+  position: absolute;
+  top: 2.1rem;
+  left: auto;
+  right: 0;
+  width: 8rem;
+  text-align: center;
+  font-size: 0.9em;
+  overflow: hidden;
+}
+@media only screen and (max-width: 575.98px) {
+  /* PHONE */
+  .settings_menu_submenu {
+    display: block;
+    position: static;
+    top: 2.3rem;
+    left: auto;
+    right: 0;
+    width: 46vw;
+    background-color: var(--settings_menu_submenu_bg);
+    text-align: center;
+    font-size: 0.9em;
+    overflow: hidden;
+  }
+  .language_menu_mobile_hint {
+    display: block;
+    position: relative;
+    line-height: 1;
+    padding: 0.5rem 1rem 0.4rem 1rem;
+    background-color: var(--settings_menu_submenu_bg);
+    color: var(--settings_menu_help_text);
+    cursor: default;
+    white-space: normal;
+    text-decoration: none;
+  }
+  .language_menu_mobile_item {
+    display: block;
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+  }
+  .language_menu_mobile_link {
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+  }
+  .language_menu_mobile_link span {
+    color: var(--main_menu_item) !important;
+  }
+}
+.settings_menu_submenu hr {
+  margin-top: 0.0rem;
+  margin-bottom: 0.0rem;
+}
+.settings_menu_submenu .settings_menu_item {
+  display: flex;
+  background-color: var(--settings_menu_submenu_item_bg);
+  transition-duration: 200ms;
+  transition-property: background-color;
+}
+.settings_menu_submenu .settings_menu_item:hover {
+  background-color: var(--settings_menu_submenu_item_bg_hover);
+}
+.settings_menu_submenu .settings_menu_item:hover .settings_menu_link {
+  color: var(--settings_menu_submenu_item_hover);
+}
+.settings_menu_submenu .settings_menu_link {
+  width: 100%;
+}
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪ флаги стран для языков  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪*/
+.flag-icon-background {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+.flag_icon {
+  display: inline-block;
+  position: relative;
+  width: 1rem;
+  line-height: 1rem;
+  margin-right: 0.5rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+.flag_icon:before {
+  content: "\00a0";
+}
+.flag_icon_ru {
+  background-image: url(../img/flags_for_language/ru.svg);
+}
+.flag_icon_en {
+  background-image: url(../img/flags_for_language/eng.svg);
+}
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ иконки для элементов меню цветовых тем ▪▪▪▪▪▪▪▪▪*/
+.color_theme_icon {
+  display: block;
+  flex: 0 0 1rem;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+.color_theme_icon_red {
+  background-color: var(--settings_menu_submenu_color_theme_icon_red);
+}
+.color_theme_icon_black {
+  background-color: var(--settings_menu_submenu_color_theme_icon_black);
+}
+.color_theme_icon_blue {
+  background-color: var(--settings_menu_submenu_color_theme_icon_blue);
+}
+.color_theme_icon_orange {
+  background-color: var(--settings_menu_submenu_color_theme_icon_orange);
+}
+.color_theme_icon_green {
+  background-color: var(--settings_menu_submenu_color_theme_icon_green);
+}
+.color_theme_icon_pink {
+  background-color: var(--settings_menu_submenu_color_theme_icon_pink);
+}
+.color_theme_icon_brown {
+  background-color: var(--settings_menu_submenu_color_theme_icon_brown);
+}
+.color_theme_icon_emerald {
+  background-color: var(--settings_menu_submenu_color_theme_icon_emerald);
+}
+/* ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪  иконки auth и settings  ▪▪▪▪▪▪▪▪▪▪▪*/
+.fa-circle-user::before {
+  content: "\f2bd";
+}
+.fa-gear::before {
+  content: "\2699";
+}
+.i_settings::before {
+  content: '\2699';
+  color: var(--settings_icon);
+  font-family: 'basic_icons';
+  font-size: 2.0rem;
+}
+.i_auth::before {
+  content: '\f2bd';
+  color: var(--settings_icon);
+  font-family: 'basic_icons';
+  font-size: 2.0rem;
+}
+.border_bottom_1px_settings_menu {
+  border-bottom: 1px solid var(--settings_icon);
+}
+.border_top_bottom_1px_settings_menu {
+  border-top: 1px solid var(--settings_icon);
+  border-bottom: 1px solid var(--settings_icon);
+}
