@@ -4,7 +4,7 @@ https://carsale.42web.io/
 
 This is a training project. I’m working on it to practice things I don’t get the chance to practice at my workplace. Primarily, it’s an advanced product filter system for an online store. It’s designed to provide as much flexibility as possible during filtering and to work quickly.
 
-** RUSSIAN **
+**RUSSIAN**
 
 Этот проект задеплоен сюда: 
 https://carsale.42web.io/
