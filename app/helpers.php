@@ -468,7 +468,7 @@ if (!function_exists('erase_dir_tree_inside')) {
 	}
 }
 
-// удаляет папку и всё внутри
+// удаляет папку и всё внутри 
 if (!function_exists('remove_dir')) {
 	function remove_dir($path) {
 		erase_dir_tree_inside($path);
